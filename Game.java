@@ -6,20 +6,14 @@ public class Game {
 
 	Game f;
 	Zombie z;
-	//private Zombie enemy;
+	
 	private static ArrayList<Zombie> enemy;
 	private static int sun= 0;
 	private static int sunFlower = 0;
 	private static int peaShooter = 0;
 
-	//private static Boolean empty;
-
 	public Game() {
 		Game.enemy = new ArrayList<Zombie>();
-		//empty = false;
-
-
-		//enemy.setHealth(1);
 
 	}
 
@@ -95,7 +89,6 @@ public class Game {
 		Game f = new Game();
 		f.createEnemy();
 		while(enemy.isEmpty() == false) {
-			//try {
 
 			System.out.println("Commands");
 			System.out.println("drop sunflower");
@@ -103,8 +96,6 @@ public class Game {
 			System.out.println("shoot");
 			System.out.println(" ");
 
-			/*				InputStreamReader sr = new InputStreamReader(System.in);
-				BufferedReader br = new BufferedReader(sr);*/
 			Scanner br = new Scanner(System.in);
 
 			sun += 1;
@@ -112,11 +103,6 @@ public class Game {
 			name = br.nextLine();
 			f.action(name);
 
-
-			/*} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}*/
 		}
 
 		System.out.println("All zombies dead");
