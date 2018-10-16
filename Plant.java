@@ -36,9 +36,7 @@ public class Plant {
 		 this.health = health;
 	}
 	
-	public void lol() {
-		
-	}
+	
 	
 
 }
