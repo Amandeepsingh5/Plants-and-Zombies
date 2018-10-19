@@ -5,7 +5,7 @@ public class Zoombie {
 	private String description;
 	private int health;
 	private int lawn_distance;
-	private Lawn l;
+	private Level l;
 	private ArrayList<String> zoombieArr = new ArrayList<>();
 
 	public Zoombie(String decription, int health) {
