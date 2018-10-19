@@ -3,9 +3,13 @@
 SYSC 3110 Software Development Project - Plants and Zombies Game
 
 Group Members:
+
  Toluwalope Ajisola
+ 
  James Desrosiers
+ 
  Zoha Mehdi
+ 
  Amandeep Singh
  
 Milestone 1: A text-based (i.e., console-based input and textual representation), barebones
