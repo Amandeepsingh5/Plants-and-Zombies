@@ -20,4 +20,4 @@ data structures and relevant operations: you are providing an initial design and
 implementation for the Model part of the MVC. Do not worry about any GUI yet.
 • Deliverables: readme file (see explanation below) + code + UML diagrams +
 documentation, all in one zip file.
-• Deadline: Wednesday Oct 23rd. Weight: 15% of the overall project grade. 
+• Deadline: Wednesday Oct 29rd. Weight: 15% of the overall project grade. 
