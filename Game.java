@@ -16,6 +16,13 @@ public class Game {
 		Game.enemy = new ArrayList<Zombie>();
 
 	}
+	
+	/*
+	 *  Connector Function between Sunflowers and the Sun Count
+	 */
+	public void gainSun(int amnt) {
+		sun += amnt;
+	}
 
 	public void createSunflower() {
 
