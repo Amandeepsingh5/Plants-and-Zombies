@@ -1,8 +1,8 @@
 public abstract class Plant{
 	
-	private String name;
-	private int cost;
-	private int health;
+	protected String name;
+	protected int cost;
+	protected int health;
 	protected int maxHealth = 10;
 	
 	protected Game owner; //Literally a stand in for the reference to the reference of this object.
