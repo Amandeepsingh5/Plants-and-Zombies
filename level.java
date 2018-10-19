@@ -1,11 +1,11 @@
 import java.util.*;
 
-public class level {
+public class levels {
 	
 	private int distance;
 	private String description;
 	
-	public level(String description) {
+	public levels(String description) {
 		this.description = description;
 	}
 	
