@@ -7,9 +7,7 @@ public abstract class Plant{
 	
 	protected Game owner; //Literally a stand in for the reference to the reference of this object.
 	
-	public Plant(String nameIn, int costIn, Game inOwner) {
-		name = nameIn;
-		cost = costIn;
+	public Plant(Game inOwner) {
 		owner = inOwner;
 		health = maxHealth;
 	}

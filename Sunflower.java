@@ -4,8 +4,10 @@ public class Sunflower extends Plant {
 	private int strength = 3;
 	protected int maxHealth = 20;
 	
-	public Sunflower(String nameIn, int costIn, Game inOwner) {
-		super(nameIn, costIn, inOwner);
+	public Sunflower( Game inOwner) {
+		super(inOwner);
+		name = "Sunflower";
+		cost = 1;
 	}
 
 	@Override
