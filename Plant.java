@@ -1,42 +1,36 @@
-
-public class Plant {
+public interface Plant{
 	
-	private String plant;
+	private String name;
 	private int cost;
-	private int points;
 	private int health;
+	private int maxHealth;
 	
-	public Plant(String plant, int cost) {
-		this.plant = plant;
-		this.cost = cost;
+	private var owner; //Literally a stand in for the reference to the reference of this object.
+	
+	public Plant(String nameIn, int costIn) {
+		name = nameIn;
+		cost = costIn;
 	}
 	
-	public void generatePoints() { //For sunflower generating points
-		points = points + 25;
-	}
+	/* General Function that contains plant functionality
+	 * 		EX: Plants make sun, peashooters launch projectiles ect....
+	 */
+	public gameFunction()
 	
-	
-	
-	public int decrementPoints() {
-		return points -=cost;
-	}
-	
-	
-	public int decrementHealth() {
-		health -= 1;
-		return health;
-	}
-	
-	
-	public int getHealth() {
-		return health;
-	}
-	
-	public void setHealth(int health) {
-		 this.health = health;
+	/* General Function to represent taking damage
+	 * 		Expected inputs: a real interger for damage, non negative
+	 * 		Expected Results: Either the plant dies, or is in a new health state
+	 */
+	public takeDamage(int damage) {
+		if(damage >= health) {
+			this.die();
+		}else {
+			health -= damage;
+		}
 	}
 	
 	
-	
-
+	public die() {
+		owner.removeObject(this);
+	}
 }
