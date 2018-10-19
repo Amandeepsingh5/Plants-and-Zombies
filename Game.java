@@ -2,6 +2,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+public class Zombie{public Zombie(int in) {}} //made to shut up the 14 error messages.
+
 public class Game {
 
 	Game f;
